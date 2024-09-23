@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO -->
+    <meta name="author" content="AkmalFadhil.com">
+    <meta name="description" content="Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop">
+    <meta name="keywords" content="Pesta Buku, 24 jam, buku, muzik, puisi, seni, indie pop">
+	
+	 <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+	<html itemscope itemtype="http://schema.org/Article">
+
+	<!-- Place this data between the <head> tags of your website -->
+	<meta name="description" content="Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop" />
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Kuantan Bangkit">
+	<meta itemprop="description" content="Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop">
+	<meta itemprop="image" content="images/kuantan-bangkit-cover.png">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@rabaklit">
+	<meta name="twitter:title" content="Kuantan Bangkit">
+	<meta name="twitter:description" content="Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop">
+	<meta name="twitter:creator" content="@alfadhilakmal">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="images/kuantan-bangkit-cover.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Kuantan Bangkit" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.rabaklit.com/bangkit/" />
+	<meta property="og:image" content="images/kuantan-bangkit-cover.png" />
+	<meta property="og:description" content="Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop" />
+	<meta property="og:site_name" content="Kuantan Bangkit" />
+	<meta property="article:published_time" content="2019-03-17T05:59:00+01:00" />
+	<meta property="article:modified_time" content="2019-03-16T19:08:47+01:00" />
+	<meta property="article:section" content="Pesta buku" />
+	<meta property="article:tag" content="bookfest" />
+	<meta property="article:tag" content="perfomances" />
+	<meta property="article:tag" content="music" />
+	<meta property="article:tag" content="art" />
+	<meta property="article:tag" content="exhibition" />
+	<meta property="article:tag" content="indie pop" />
+	<meta property="fb:admins" content="169019457043161" /> 
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Page Title -->
+    <title>Kuantan Bangkit</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Font : Open Sans & Montserrat -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Plugins -->
+    <link href="css/plugins/animate.css" rel="stylesheet">
+    <link href="css/plugins/slick.css" rel="stylesheet">
+    <link href="css/plugins/magnific-popup.css" rel="stylesheet">
+    <link href="css/plugins/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/streamline-icons.css" rel="stylesheet">
+
+    <!-- Event Style -->
+    <link href="css/event.css" rel="stylesheet">
+
+    <!-- Color Theme -->
+    <!-- Options: green, purple, red, yellow, mint, blue, black  -->
+    <link href="css/themes/black.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="js/ie/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- Modernizr -->
+    <script src="js/modernizr.min.js"></script>
+    <!-- Subtle Loading bar -->
+    <script src="js/plugins/pace.js"></script>
+</head>
+
+<body class="animate-page" data-spy="scroll" data-target="#navbar" data-offset="100">
+    <!--Preloader div-->
+    <div class="preloader"></div>
+
+
+
+    <header id="top" class="header">
+        <div class="container">
+
+            <div class="header_top-bg">
+                <div class="logo">
+                    <a href="#"><img class="img-responsive center-block" src="images/logo/kuantan-bangkit.png" alt="event-logo"></a>
+                </div>
+            </div>
+
+            <h3 class="headline-support wow fadeInDown">Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop</h3>
+            <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">Kuantan Bangkit</h1>
+
+            <div class="when_where wow fadeIn" data-wow-delay="0.4s">
+                <p class="event_when">23 April - 28 April 2019</p>
+                <p class="event_where">Telok Chempedak Kuantan, Pahang</p>
+            </div>
+
+            <div class="header_bottom-bg">
+                <a class="btn btn-default btn-xl wow zoomIn" data-wow-delay="0.3s" href="https://www.facebook.com/kuantanbangkit/" >Facebook Kuantan Bangkit</a>
+                <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Jualan buku, 24 jam puisi, persembahan band indie dan hip hop, persembahan anak seni Pahang, wayang pacak, diskusi buku, mini teater, pertandingan design cover buku dan fan fiction</small></p>
+            </div>
+
+        </div>
+        <!-- end .container -->
+    </header>
+    <!-- end .header -->
+
+    <!-- 
+     Highlight Section
+     ====================================== -->
+
+    <section class="highlight">
+
+        <div class="container">
+            <p class="lead text-center">Pesta Buku 24 jam hanya buku, muzik, puisi, seni dan indie pop. Pop Literature, Perbadanan Perpustakaan Awam Pahang dan Perbadanan Kota Buku akan mengembalikan kegemilangan anak muda Kuantan bangkit berkarya bina arah tuju baru orang muda. </p>
+
+            <div class="countdown_wrap">
+
+                <h6 class="countdown_title text-center">AKAN BERMULA</h6>
+
+                <!-- Countdown JS for the Event Date Starts here.
+    TIP: You can change your event time below in the Same Format.  -->
+
+                <ul id="countdown" data-event-date="23 april 2019 11:00:00">
+                    <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
+                        <p class="timeRefDays">hari</p>
+                    </li>
+                    <li class="wow zoomIn" data-wow-delay="0.2s"> <span class="hours">00</span>
+                        <p class="timeRefHours">jam</p>
+                    </li>
+                    <li class="wow zoomIn" data-wow-delay="0.4s"> <span class="minutes">00</span>
+                        <p class="timeRefMinutes">minit</p>
+                    </li>
+                    <li class="wow zoomIn" data-wow-delay="0.6s"> <span class="seconds">00</span>
+                        <p class="timeRefSeconds">saat</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- end .countdown_wrap -->
+
+            <div class="text-center">
+
+                <!-- Add to Calendar Plugin. 
+                     For Customization, Visit https://addtocalendar.com/ -->
+
+                <span class="addtocalendar atc-style-theme">
+                <a href="https://www.facebook.com/events/159646494850042/" class="atcb-link"><i class="fa fa-check"> </i> Sertai!</a>
+               </span>
+
+            </div>
+
+        </div>
+        <!-- end .container -->
+
+    </section>
+    <!-- end section.highlight -->
+
+	
+    <!-- 
+     Our Schedule
+     ====================================== -->
+
+    <section class="schedule" id="schedule">
+
+        <div class="container">
+            <div class="section-title wow fadeInUp">
+                <h4>Acara Pentas</h4>
+            </div>
+
+            <div class="nav-center">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" role="tablist" id="schedule-tabs">
+                    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Selasa 23 April </a></li>
+                    <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Rabu 24 April </a></li>
+                    <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">Khamis 25 April </a></li>
+                    <li role="presentation"><a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">Jumaat 26 April</a></li>
+                    <li role="presentation"><a href="#day5" aria-controls="day5" role="tab" data-toggle="tab">Sabtu 27 April</a></li>
+                    <li role="presentation"><a href="#day6" aria-controls="day6" role="tab" data-toggle="tab">Ahad 28 April</a></li>
+                    <!-- <li role="presentation"><a href="#day3" aria-controls="messages" role="tab" data-toggle="tab">Day Three</a></li> -->
+                </ul>
+
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="day1">
+
+                    <!-- ########## Schedule Timeline DAY 01 Starts ########### -->
+
+                    <section class="timeline">
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Perasmian Jom Baca</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">10.00 pagi - 02.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Games/Free Gift</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot SMO Bookstores  </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.00 - 06.10 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Art Funding</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCreative Ventures </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.10 - 06.20 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Kupon Percuma RM4.00</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCar</p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.20 - 06.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                    </section>
+                    <!-- timeline -->
+
+                    <!-- ########### End Schedule Timeline  DAY 01  ########### -->
+
+                </div>
+				
+                <div role="tabpanel" class="tab-pane" id="day2">
+
+                    <!-- ########## Schedule Timeline DAY 02 Starts ########### -->
+
+                    <section class="timeline">
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Pertandingan Pakaian Tradisional</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">10.00 pagi - 01.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Games/Free Gift</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot SMO Bookstores </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.00 - 06.10 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Art Funding</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCreative Ventures </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.10 - 06.20 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Kupon MyCar percuma RM4.00</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCar </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.20 - 06.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                    </section>
+                    <!-- timeline -->
+
+                    <!-- ########### End Schedule Timeline  DAY 02  ########### -->
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="day3">
+
+                    <!-- ########## Schedule Timeline DAY 03 Starts ########### -->
+
+                    <section class="timeline">
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Games/Free Gift</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot SMO Bookstores </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.00 - 06.10 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Art Funding</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCreative Ventures </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.10 - 06.20 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Kupon MyCar percuma RM4.00</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCar </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.20 - 06.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                    </section>
+                    <!-- timeline -->
+
+                    <!-- ########### End Schedule Timeline  DAY 03  ########### -->
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="day4">
+
+                    <!-- ########## Schedule Timeline DAY 04 Starts ########### -->
+
+                    <section class="timeline">
+						<div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Pertandingan Dari PPAP</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date">03.00 - 05.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Bacaan Puisi dari PyanHabib</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">PyanHabib</p>
+                                <span class="date">05.00 - 05.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Perbincangan Buku Pemberontak Filem bersama Nasir Jani</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Nasir Jani</p>
+                                <span class="date">05.30 - 06.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Games/Free Gift</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot SMO Bookstores </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.00 - 06.10 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Art Funding</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCreative Ventures </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.10 - 06.20 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2 class="wow flipInX" data-wow-delay="0.3s"> Kupon MyCar percuma RM4.00</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCar </p>
+                                <span class="date wow flipInX" data-wow-delay="0.3s">06.20 - 06.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>PPAP Akustik Kuantan Talent </h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date">08.00 - 09.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>						
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Wayang Pacak Short Filem </h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Rizal Gunx, Daniyal Kadir, Odie, Daniyal Kadir</p>
+                                <span class="date">9.00 - 10.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>						
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Wayang Pacak Kuantan Bangkit </h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Tayangan Filem </p>
+                                <span class="date">10.00 - 12.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>						
+                        <!-- timeline-block -->
+						
+                    </section>
+                    <!-- timeline -->
+
+                    <!-- ########### End Schedule Timeline  DAY 04  ########### -->
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="day5">
+
+                    <!-- ########## Schedule Timeline  DAY 05 Starts ########### -->
+                    <section class="timeline">
+                        
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Pertandingan Bercerita Peringkat Akhir</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date">10.00 pagi - 01.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+                        
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Pelancaran buku Tulang Kata 'Tentang Semalam'</h2>
+                                <span class="date">02.00 - 02.45 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Games/Free Gift</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot SMO Bookstores </p>
+                                <span class="date">06.00 - 06.10 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Art Funding</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCreative Ventures</p>
+                                <span class="date">06.10 - 06.20 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2> Kupon Percuma RM4.00</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCar</p>
+                                <span class="date">06.20 - 06.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Puisi Bangkit Bersama.. </h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Jack Malik, Pyanhabib, TulangKata</p>
+                                <span class="date">06.30 petang - 07.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Senandung Anak Pahang </h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date">08.00 - 09.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Renjana </h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">TulangKata, B-Heart &amp; Sharon Richard </p>
+                                <span class="date">09.00 - 10.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Tayangan Filem Kembara Seniman Jalanan (Digital)</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Wayang Pacak Kuantan Bangkit </p>
+                                <span class="date">10.00 - 12.00 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                    </section>
+                    <!-- timeline -->
+                    <!-- ########### End Schedule Timeline  DAY 05 ########### -->
+
+                </div>
+				<div role="tabpanel" class="tab-pane" id="day6">
+
+                    <!-- ########## Schedule Timeline  DAY 06 Starts ########### -->
+                    <section class="timeline">
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Pertandingan Mewarna</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Perbadanan Perpustakaan Awam Pahang</p>
+                                <span class="date">10.00 pagi - 12.00 tengah hari</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Persembahan Muzik Indie</h2>
+                                <span class="date">2.00 - 4.00 petang </span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Wannabe Sasau By Jack Malik</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Jack Malik</p>
+                                <span class="date">4.00 - 4.30 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Puisi Bersama PyanHabib</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">PyanHabib</p>
+                                <span class="date">04.30 - 05.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Persembahan Muzik Indie</h2>
+                                <span class="date">05.00 - 06.00 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Games/Free Gift</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot SMO Bookstores</p>
+                                <span class="date">06.00 - 06.10 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Art Funding</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Sponsor Slot MyCreative Ventures</p>
+                                <span class="date">06.10 - 06.20 petang</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+						
+                        <div class="timeline-block">
+                            <div class="timeline-bullet">
+
+                            </div>
+                            <!-- timeline-bullet -->
+
+                            <div class="timeline-content">
+                                <h2>Akustik Bangkit by Radhi OAG</h2>
+                                <p class="wow flipInX" data-wow-delay="0.3s">Radhi OAG</p>
+                                <span class="date">09.00 - 10.30 malam</span>
+                            </div>
+                            <!-- timeline-content -->
+                        </div>
+                        <!-- timeline-block -->
+
+                    </section>
+                    <!-- timeline -->
+                    <!-- ########### End Schedule Timeline  DAY 06 ########### -->
+
+                </div>
+                <!-- <div role="tabpanel" class="tab-pane" id="day3">..33333.</div> -->
+            </div>
+
+        </div>
+        <!-- end .container -->
+
+    </section>
+    <!-- end section.schedule -->
+
+    <!-- 
+     What to Expect : Benefits
+     ====================================== -->
+
+    <!-- TODO: Change Icons to Fonts for better theming. -->
+
+    <section class="benefits">
+
+        <div class="container">
+            <div class="section-title wow fadeInUp">
+                <h4>Pelbagai Aktiviti Menarik</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"><i class="icon icon-armchair-chair-streamline"> </i></div>
+                                <h6 class="benefit-title">Meet & Greet</h6>
+                                <p>Perjumpaan penulis, Pantai Timur khususnya</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"> <i class="icon icon-paint-bucket-streamline"> </i></div>
+                                <h6 class="benefit-title">Pertunjukan</h6>
+                                <p>Pertunjukkan ciptaan seni dan kreatif</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"> <i class="icon icon-micro-record-streamline"> </i></div>
+                                <h6 class="benefit-title">Persembahan</h6>
+                                <p>Persembahan artis dan band indie</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"> <i class="icon icon-streamline-umbrella-weather"> </i></div>
+                                <h6 class="benefit-title">Santai</h6>
+                                <p>Perkhemahan di pantai</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"> <i class="icon icon-magic-magic-wand-streamline"> </i></div>
+                                <h6 class="benefit-title">Seni</h6>
+                                <p>Pertunjukkan wayang pacak</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"> <i class="icon icon-bubble-love-streamline-talk"> </i></div>
+                                <h6 class="benefit-title">Tradisi</h6>
+                                <p>Tarian dan mini teater dari Senandung Anak Pahang</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"> <i class="icon icon-music-note-streamline"> </i></div>
+                                <h6 class="benefit-title">Busker</h6>
+                                <p>Busker dan puisi bersama Kuantan</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"><i class="icon icon-book-read-streamline"> </i></div>
+                                <h6 class="benefit-title">Buku</h6>
+                                <p>Jualan buku baru terbit dan jualan buku buang harga mahal tukar menjadi murah</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end section.benefits -->
+
+
+    <!-- 
+     Our Sponsors
+     ====================================== -->
+
+    <section class="sponsors" id="sponsors" style="padding: 30px 0;">
+
+        <div class="container">
+            <div class="section-title wow fadeInUp">
+                <h4>Rakan Acara</h4>
+            </div>
+
+			<div class="col-xs-4"><img src="images/logo/Logo-Kospek.png" class="img-responsive center-block" alt="sponsor"> </div>
+			<div class="col-xs-4"><a href="http://rabaklit.com/mycreative-ventures-sdn-bhd/" target="_blank"><img src="images/logo/MyC Logo Official.jpg" class="img-responsive center-block" alt="sponsor"></a></div>
+			<div class="col-xs-4"><a href="http://rabaklit.com/smo-bookstores/" target="_blank"><img src="images/logo/smo-bookstores.png" class="img-responsive center-block" alt="sponsor"></a></div>
+        </div>
+		
+        <div class="container">
+            <div class="section-title wow fadeInUp">
+                <h4>Penganjur</h4>
+            </div>
+
+			<div class="col-xs-4"><img src="images/logo/poplit-logo.png" class="img-responsive center-block" alt="sponsor"> </div>
+			<div class="col-xs-4"><img src="images/logo/hires-rabak-lit.png" class="img-responsive center-block" alt="sponsor"></div>
+			<div class="col-xs-4"><img src="images/logo/PPAP.png" class="img-responsive center-block" alt="sponsor"></div>
+			
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end section.sponsors -->
+
+
+
+    <!-- 
+     Footer Call to Action
+     ====================================== -->
+
+    <section class="footer-action">
+
+        <div class="container">
+
+            <h4 class="headline-support wow fadeInDown">Anda Berbakat?</h4>
+            <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">Datang dan bentangkan idea anda kepada MyCreative Ventures di acara Kuantan Bangkit 2019</h2>
+
+            <div class="footer_bottom-bg">
+                <a href="http://rabaklit.com/mycreative-ventures-sdn-bhd/" target="_blank" class="btn btn-success btn-lg wow zoomIn" data-wow-delay="0.3s" href="#" data-toggle="modal" >Kenali MyCreative Ventures</a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end section.footer-action -->
+	
+	<!-- 
+     Gallery
+     ====================================== -->
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h4>Galeri</h4>
+            </div>
+
+            <div class="nav-center bottom-space-lg">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active"><a href="#photo-gallery" aria-controls="photo-gallery" role="tab" data-toggle="tab">Poster</a></li>
+                    <li role="presentation"><a href="#video-gallery" aria-controls="video-gallery" role="tab" data-toggle="tab">MyCreative Ventures</a></li>
+                    <!-- <li role="presentation"><a href="#day3" aria-controls="messages" role="tab" data-toggle="tab">Day Three</a></li> -->
+                </ul>
+
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="photo-gallery">
+
+                    <div class="popup-gallery">
+
+                        <div class="row">
+
+                            <div class="col-xs-12">
+                                <a href="images/poster/jemputan-kuantan-bangkit.jpeg" title=""><img src="images/poster/jemputan-kuantan-bangkit.jpeg" alt="gallery image" class="img-responsive wow fadeIn"></a>
+                            </div>
+
+                            <div class="col-xs-12">
+                                <div class="row">
+
+                                    <div class="col-xs-6">
+                                        <a href="images/poster/renjana.jpg" title=""><img src="images/poster/renjana.jpg" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.2s"></a>
+                                    </div>
+
+                                    <div class="col-xs-6">
+                                        <a href="images/poster/pesta-buku-pahang.jpg" title=""><img src="images/poster/pesta-buku-pahang.jpg" alt="gallery image" class="img-responsive wow fadeIn" data-wow-delay="0.2s"></a>
+                                    </div>
+
+                                </div>
+                                <!-- end .row -->
+
+                            </div>
+
+                        </div>
+                        <!-- end .row -->
+
+                    </div>
+                    <!-- end .popup-gallery -->
+                </div>
+                <!-- end .tabpanel -->
+
+				<div role="tabpanel" class="tab-pane" id="video-gallery">
+					<div class="popup-gallery">
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+								<a href="images/poster/my-creative-poster.jpg" title=""><img src="images/poster/my-creative-poster.jpg" alt="gallery image" class="img-responsive wow " data-wow-delay="0.2s"></a>
+                            </div>
+
+                        </div>
+                        <!-- end .row -->
+
+                    </div>
+			  
+                </div>
+                 <!-- // end tab-pane -->
+        </div>
+        <!-- end .tab-content -->
+
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end section.gallery -->
+
+    <footer>
+
+        <div class="social-icons">
+            <a href="https://twitter.com/rabaklit" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
+            <a href="https://www.facebook.com/rabaklit/" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
+            <a href="https://www.instagram.com/rabaklit/" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-instagram"></i> </a>
+        </div>
+        <p> <small class="text-muted">Copyright © 2019. All rights reserved.</small></p>
+
+    </footer>
+
+    <a href="#top" class="back_to_top"><img src="images/back_to_top.png" alt="back to top"></a>
+
+    <!-- 
+     Javascripts : Nerd Stuff :)
+     ====================================== -->
+
+    <!-- jQuery Library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 3rd party Plugins -->
+    <script src="js/plugins/countdown.js"></script>
+    <script src="js/plugins/wow.js"></script>
+    <script src="js/plugins/slick.js"></script>
+    <script src="js/plugins/magnific-popup.js"></script>
+    <script src="js/plugins/validate.js"></script>
+    <script src="js/plugins/appear.js"></script>
+    <script src="js/plugins/count-to.js"></script>
+    <script src="js/plugins/nicescroll.js"></script>
+
+    <!-- Google Map -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/plugins/infobox.js"></script>
+    <script src="js/plugins/google-map.js"></script>
+    <script src="js/plugins/directions.js"></script>
+
+    <!-- JS Includes -->
+    <script src="js/includes/subscribe.js"></script>
+    <script src="js/includes/contact_form.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
