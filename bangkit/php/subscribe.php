@@ -6,8 +6,8 @@
  * ------------------------------------
  */
 
-$apiKey       = 'e04c8d1186959dbfc5e645a02805a3d9-us7'; /*Your Mailchiimp API Key*/
-$listId       = 'bdcd4b0a73'; /*Mailchimp List ID*/
+$apiKey       = ''; /*Your Mailchiimp API Key*/
+$listId       = ''; /*Mailchimp List ID*/
 $double_optin = true; /*Set False if you don't need to verify user enmail */
 $send_welcome = true; /* Send Welcome email to new users */
 $email        = $_POST['email'];
