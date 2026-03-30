@@ -1,23 +1,16 @@
 /*
-
-Script  : Main JS
-Version : 1.0
-Author  : Surjith S M
+Script  : Main JS - XSS-Hardened Version
+Version : 1.1
+Author  : Surjith S M, modifications by Copilot
 URI     : http://themeforest.net/user/surjithctly
-
 Copyright © All rights Reserved
-Surjith S M / @surjithctly
-
 */
 
+/* global $, WOW, Modernizr, $.validator */
 $(function() {
-
     "use strict";
 
-    /* ================================================
-       On Scroll Menu
-       ================================================ */
-
+    // On Scroll Menu Reveal
     $(window).scroll(function() {
         if ($(window).scrollTop() > 600) {
             $('.js-reveal-menu').removeClass('reveal-menu-hidden').addClass('reveal-menu-visible');
@@ -26,20 +19,12 @@ $(function() {
         }
     });
 
-    /* ================================================
-       Parallax Header
-       ================================================ */
-
+    // Parallax Header
     if ($('.parallax-bg').length) {
-        $('.parallax-bg').parallax({
-            speed: 0.20
-        });
+        $('.parallax-bg').parallax({ speed: 0.20 });
     }
 
-    /* ================================================
-       FLEX SLIDER
-       ================================================ */
-
+    // Flex Slider
     if ($('.flexslider').length) {
         $('.flexslider').flexslider({
             animation: "slide",
@@ -47,49 +32,27 @@ $(function() {
         });
     }
 
-    /* ================================================
-       Initialize Countdown
-       ================================================ */
-
-    /*Fetch Event Date From HTML. For Not tech Savvy Users */
-
+    // Countdown Timer (data-event-date must be hardcoded, not user-provided)
     var get_date = $('#countdown').data('event-date');
-
     if (get_date) {
         $("#countdown").countdown({
             date: get_date,
-            /*Change date and time in HTML data-event-date attribute */
             format: "on"
         });
     }
 
-    /* ================================================
-       Initialize Tabs
-       ================================================ */
-
+    // Tabs (static anchors only)
     $('#schedule-tabs a').on("click",function(e) {
-        e.preventDefault()
-        $(this).tab('show')
+        e.preventDefault();
+        $(this).tab('show');
     });
 
-    /* ================================================
-       Stat Counter
-       ================================================ */
-
+    // Stat Counter
     $('#stats-counter').appear(function() {
-        $('.count').countTo({
-            refreshInterval: 50
-        });
+        $('.count').countTo({ refreshInterval: 50 });
     });
 
-    /* ================================================
-       Initialize Slick Slider 
-       ================================================ */
-
-    /* 
-       SLICK SLIDER
-       ------------ */
-
+    // Slick Sliders
     if ($('.slick-slider').length) {
         $('.slick-slider').slick({
             slidesToShow: 6,
@@ -98,33 +61,13 @@ $(function() {
             autoplay: false,
             arrows: true,
             dots: true,
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    arrows: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 5
-                }
-            }, {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
+            responsive: [
+                { breakpoint: 1200, settings: { arrows: true, slidesToShow: 5, slidesToScroll: 5 } },
+                { breakpoint: 992, settings: { slidesToShow: 3, slidesToScroll: 3 } },
+                { breakpoint: 520, settings: { slidesToShow: 1, slidesToScroll: 1 } }
+            ]
         });
     }
-
-    /* 
-    SPONSORS
-    -------- */
-
     if ($('.sponsor-slider').length) {
         $('.sponsor-slider').slick({
             centerMode: true,
@@ -132,59 +75,26 @@ $(function() {
             slidesToShow: 2,
             autoplay: true,
             arrows: true,
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }]
+            responsive: [
+                { breakpoint: 768, settings: { arrows: false, centerMode: true, centerPadding: '40px', slidesToShow: 3 } },
+                { breakpoint: 480, settings: { arrows: false, centerMode: true, centerPadding: '40px', slidesToShow: 1 } }
+            ]
         });
     }
-
-    /* 
-       SPEAKERS
-       -------- */
-
     if ($('.speaker-slider').length) {
         $('.speaker-slider').slick({
             slidesToShow: 6,
             autoplay: false,
             arrows: true,
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    arrows: true,
-                    slidesToShow: 5
-                }
-            }, {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 1
-                }
-            }]
+            responsive: [
+                { breakpoint: 1200, settings: { arrows: true, slidesToShow: 5 } },
+                { breakpoint: 992, settings: { slidesToShow: 3 } },
+                { breakpoint: 520, settings: { slidesToShow: 1 } }
+            ]
         });
     }
 
-    /* ================================================
-       Scroll Functions
-       ================================================ */
-
+    // Scroll functions - Restrict anchor to valid IDs only
     $(window).scroll(function() {
         if ($(window).scrollTop() > 1000) {
             $('.back_to_top').fadeIn('slow');
@@ -192,50 +102,52 @@ $(function() {
             $('.back_to_top').fadeOut('slow');
         }
     });
-
-    $('nav a[href^=#]:not([href=#]), .back_to_top').on('click', function(event) {
-        var $anchor = $(this);
-        var target = $anchor.attr('href');
-        
-        // Validate it's a safe anchor
-        if (!target || !target.match(/^#[a-zA-Z0-9_-]+$/)) {
-            return;
+    $('nav a[href^="#"]:not([href="#"]), .back_to_top').on('click', function(event) {
+        var target = $(this).attr('href');
+        // Only allow anchors which are valid HTML IDs.
+        if (!target || !/^#[a-zA-Z][\w\-\:\.]*$/.test(target)) return;
+        var $tgt = $(target);
+        if ($tgt.length) {
+            $('html, body').stop().animate({
+                scrollTop: $tgt.offset().top - 50
+            }, 1500);
         }
-        
-        $('html, body').stop().animate({
-            scrollTop: $(target).offset().top - 50
-        }, 1500);
         event.preventDefault();
     });
 
+    // Initialize WOW JS for static effect
+    if ($('body').hasClass('animate-page')) {
+        var wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            mobile: false
+        });
+        wow.init();
+    }
 });
 
-/* ================================================
-  Video Gallery
-  ================================================ */
-
+// =====================
+// Video Gallery - SAFE only for trusted URLs
+// =====================
 $(".play-video").on("click",function(e) {
     e.preventDefault();
     var videourl = $(this).data("video-url");
-    
-    // Validate URL is safe (must be HTTPS and from trusted domain)
+
+    // Only allow HTTPS YouTube & Vimeo (static HTML only)
     try {
         var url = new URL(videourl, window.location.origin);
-        if (url.protocol !== 'https:') {
-            console.error('Invalid protocol');
-            return;
-        }
-        // Whitelist allowed video domains
-        var allowedDomains = ['youtube.com', 'vimeo.com', 'youtube-nocookie.com'];
-        if (!allowedDomains.some(domain => url.hostname.includes(domain))) {
-            console.error('Untrusted domain');
-            return;
-        }
-    } catch (e) {
-        console.error('Invalid URL');
+        if (url.protocol !== 'https:') return;
+        var allowedDomains = ['youtube.com', 'youtu.be', 'youtube-nocookie.com', 'vimeo.com'];
+        // Strict check only at domain end (.com) for static site.
+        var domainAllowed = allowedDomains.some(function(domain) {
+            return url.hostname === domain || url.hostname.endsWith('.' + domain);
+        });
+        if (!domainAllowed) return;
+    } catch(err) {
         return;
     }
-    
+
+    // Insert a static spinner (no user-data)
     $(this).append($('<i>').addClass('video-loader fa fa-spinner fa-spin'));
     $('.media-video iframe').attr('src', videourl);
     setTimeout(function() {
@@ -243,26 +155,26 @@ $(".play-video").on("click",function(e) {
     }, 1000);
 });
 
-/* ================================================
-   Magnific Popup
-   ================================================ */
+// =====================
+// Magnific Popup - Remove user-data from strings
+// =====================
 if ($('.popup-gallery').length) {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
-        tLoading: 'Loading image #%curr%...',
+        tLoading: 'Loading image...',
         mainClass: 'mfp-img-mobile',
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0, 1]
         },
         image: {
-            tError: 'The image could not be loaded.'
-        }
+            tError: 'The image could not be loaded.' // do not inject user values
+        },
         zoom: {
             enabled: true,
-            duration: 300, // don't foget to change the duration also in CSS
+            duration: 300,
             opener: function(element) {
                 return element.find('img');
             }
@@ -270,39 +182,63 @@ if ($('.popup-gallery').length) {
     });
 }
 
-/* ================================================
-   jQuery Validate - Reset Defaults
-   ================================================ */
-
-$.validator.setDefaults({
-    highlight: function(element) {
-        $(element).closest('.form-group').addClass('has-error');
-    },
-    unhighlight: function(element) {
-        $(element).closest('.form-group').removeClass('has-error');
-    },
-    errorElement: 'small',
-    errorClass: 'help-block',
-    errorPlacement: function(error, element) {
-        if (element.parent('.input-group').length) {
-            error.insertAfter(element.parent());
+// =====================
+// jQuery Validate: for design, no XSS vector
+// =====================
+if (typeof $.validator !== "undefined") {
+    $.validator.setDefaults({
+        highlight: function(element) {
+            $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'small',
+        errorClass: 'help-block',
+        errorPlacement: function(error, element) {
+            if (element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else if (element.parent('label').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
         }
-        if (element.parent('label').length) {
-            error.insertAfter(element.parent());
-        } else {
-            error.insertAfter(element);
+    });
+    // Paypal registration form validation rules (static input only)
+    $("#paypal-regn").validate({
+        rules: {
+            first_name: "required",
+            last_name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            os0: "required",
+            quantity: "required",
+            agree: "required"
+        },
+        messages: {
+            first_name: "Your first name",
+            last_name: "Your last name",
+            email: "We need your email address",
+            os0: "Choose your Pass",
+            quantity: "How many seats",
+            agree: "Please accept our terms and privacy policy"
+        },
+        submitHandler: function(form) {
+            $("#reserve-btn").attr("disabled", true);
+            form.submit();
         }
-    }
-});
+    });
+}
 
-/* ================================================
-   Add to Calendar
-   ================================================ */
-
+// =====================
+// Add to Calendar (3rd party script load, static only)
+// =====================
 (function() {
-    if (window.addtocalendar)
-        if (typeof window.addtocalendar.start == "function") return;
-    if (window.ifaddtocalendar == undefined) {
+    if (window.addtocalendar && typeof window.addtocalendar.start == "function") return;
+    if (window.ifaddtocalendar === undefined) {
         window.ifaddtocalendar = 1;
         var d = document,
             s = d.createElement('script'),
@@ -310,16 +246,15 @@ $.validator.setDefaults({
         s.type = 'text/javascript';
         s.charset = 'UTF-8';
         s.async = true;
-        s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+        s.src = (window.location.protocol === 'https:' ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
         var h = d[g]('body')[0];
-        h.appendChild(s);
+        if(h) h.appendChild(s);
     }
 })();
 
-/* ================================================
-   Twitter Widget
-   ================================================ */
-
+// =====================
+// Twitter Widget Loader (from Twitter CDN only)
+// =====================
 window.twttr = (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
@@ -333,61 +268,5 @@ window.twttr = (function(d, s, id) {
     t.ready = function(f) {
         t._e.push(f);
     };
-
     return t;
 }(document, "script", "twitter-wjs"));
-
-/* ================================================
-   Paypal Form Validation
-   ================================================ */
-
-// validate Registration Form
-$("#paypal-regn").validate({
-    rules: {
-        first_name: "required",
-        last_name: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        os0: "required",
-        quantity: "required",
-        agree: "required"
-    },
-    messages: {
-        first_name: "Your first name",
-        last_name: "Your last name",
-        email: "We need your email address",
-        os0: "Choose your Pass",
-        quantity: "How many seats",
-        agree: "Please accept our terms and privacy policy"
-    },
-    submitHandler: function(form) {
-        $("#reserve-btn").attr("disabled", true);
-        form.submit();
-    }
-});
-
-/*
- * // End $ Strict Function
- * ------------------------ */
-
-$(function() {
-
-    /* ================================================
-       Initialize WOW JS
-       ================================================ */
-
-    if ($('body').hasClass('animate-page')) {
-        wow = new WOW({
-            animateClass: 'animated',
-            offset: 100,
-            mobile: false
-        });
-        wow.init();
-    }
-});
-
-/*
- * End $ Function
- * -------------- */
