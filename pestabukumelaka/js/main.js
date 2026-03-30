@@ -195,8 +195,15 @@ $(function() {
 
     $('nav a[href^=#]:not([href=#]), .back_to_top').on('click', function(event) {
         var $anchor = $(this);
+        var target = $anchor.attr('href');
+        
+        // Validate it's a safe anchor
+        if (!target || !target.match(/^#[a-zA-Z0-9_-]+$/)) {
+            return;
+        }
+        
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 50
+            scrollTop: $(target).offset().top - 50
         }, 1500);
         event.preventDefault();
     });
