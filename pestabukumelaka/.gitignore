@@ -1,0 +1,19 @@
+# Environment variables (SENSITIVE!)
+.env
+.env.local
+.env.*.local
+
+# Composer
+vendor/
+composer.lock
+
+# PHP
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
