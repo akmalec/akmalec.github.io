@@ -210,6 +210,25 @@ $(function() {
 $(".play-video").on("click",function(e) {
     e.preventDefault();
     var videourl = $(this).data("video-url");
+    
+    // Validate URL is safe (must be HTTPS and from trusted domain)
+    try {
+        var url = new URL(videourl, window.location.origin);
+        if (url.protocol !== 'https:') {
+            console.error('Invalid protocol');
+            return;
+        }
+        // Whitelist allowed video domains
+        var allowedDomains = ['youtube.com', 'vimeo.com', 'youtube-nocookie.com'];
+        if (!allowedDomains.some(domain => url.hostname.includes(domain))) {
+            console.error('Untrusted domain');
+            return;
+        }
+    } catch (e) {
+        console.error('Invalid URL');
+        return;
+    }
+    
     $(this).append('<i class="video-loader fa fa-spinner fa-spin"></i>')
     $('.media-video iframe').attr('src', videourl);
     setTimeout(function() {
