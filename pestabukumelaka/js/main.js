@@ -229,7 +229,7 @@ $(".play-video").on("click",function(e) {
         return;
     }
     
-    $(this).append('<i class="video-loader fa fa-spinner fa-spin"></i>')
+    $(this).append($('<i>').addClass('video-loader fa fa-spinner fa-spin'));
     $('.media-video iframe').attr('src', videourl);
     setTimeout(function() {
         $('.video-loader').remove();
@@ -251,8 +251,8 @@ if ($('.popup-gallery').length) {
             preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         },
         image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        },
+            tError: 'The image could not be loaded.'
+        }
         zoom: {
             enabled: true,
             duration: 300, // don't foget to change the duration also in CSS
