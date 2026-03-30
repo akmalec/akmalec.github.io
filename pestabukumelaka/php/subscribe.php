@@ -2,74 +2,100 @@
 
 /*
  * ------------------------------------
- * Mailchimp Email Configuration
+ * Mailchimp Email Subscription - SECURE
  * ------------------------------------
  */
 
-$apiKey       = 'e04c8d1186959dbfc5e645a02805a3d9-us7'; /*Your Mailchiimp API Key*/
-$listId       = 'bdcd4b0a73'; /*Mailchimp List ID*/
-$double_optin = true; /*Set False if you don't need to verify user enmail */
-$send_welcome = true; /* Send Welcome email to new users */
-$email        = $_POST['email'];
-$fname        = ''; 
-$lname        = ''; 
-$datacenter	  = explode( '-', $apiKey );
-$post_url     = 'https://' . $datacenter[1] . '.api.mailchimp.com/2.0/lists/subscribe.json?';
+// SECURITY: Use environment variables, NOT hardcoded keys!
+$apiKey = getenv('MAILCHIMP_API_KEY');
+$listId = getenv('MAILCHIMP_LIST_ID');
 
-/*
-Need to capture First name and last name? use this.
-$fname        = $_POST['fname'];
-$lname        = $_POST['lname'];
-*/
+if (!$apiKey || !$listId) {
+    echo 'error';
+    exit;
+}
 
+$double_optin = true;
+$send_welcome = true;
 
-/*
- * ------------------------------------
- * END CONFIGURATION
- * ------------------------------------
- */
+// SECURITY: Use POST only, validate input
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    echo 'error';
+    exit;
+}
 
-/*
- * -------------------------------------------------
- * NERD STUFF BELOW, ONLY EDIT IF YOU ARE A PRO
- * -------------------------------------------------
- */
+$email = isset($_POST['email']) ? trim($_POST['email']) : '';
 
-// Let's put together our user data to send
-$post_query_array = array(
-    "apikey" => $apiKey,
-    "id" => $listId,
-    "email" => array(
-        "email" => $email,
-        "euid" => "",
-        "leid" => ""
-    ),
-    "double_optin" => $double_optin,
-    "send_welcome" => $send_welcome,
-    "merge_vars" => array( // Build an Array of the different Merge Vars you setup in your account
-        'FNAME' => $fname,
-        'LNAME' => $lname
-    )
-);
+// SECURITY: Strict email validation
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo 'error';
+    exit;
+}
 
-// We still need to build our HTML query string to send
-$post_query_string = http_build_query($post_query_array);
+// SECURITY: Sanitize and limit length
+$email = substr($email, 0, 254);
+$email = str_replace(["\r", "\n"], '', $email);
 
-// Make sure we have a User's Email address as this is the only required item
+$fname = isset($_POST['fname']) ? trim(substr($_POST['fname'], 0, 50)) : '';
+$lname = isset($_POST['lname']) ? trim(substr($_POST['lname'], 0, 50)) : '';
+
+// SECURITY: Remove newlines from names
+$fname = str_replace(["\r", "\n"], '', $fname);
+$lname = str_replace(["\r", "\n"], '', $lname);
+
 if (!empty($email)) {
-    // Submit the data via Curl
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $post_url); // Post URL
-    curl_setopt($ch, CURLOPT_POST, TRUE);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $post_query_string); // Our Query string that we built
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-    $curl_out = curl_exec($ch);
-	$data = json_decode($curl_out);
-	if ($data->error){
-		echo $data->error;
-	} else {
-		echo 'success';
-	}
+    $datacenter = explode('-', $apiKey);
+    if (count($datacenter) < 2) {
+        echo 'error';
+        exit;
+    }
+    
+    $post_url = 'https://' . $datacenter[1] . '.api.mailchimp.com/2.0/lists/subscribe.json?';
 
-} 
+    // SECURITY: Build safe query array
+    $post_query_array = array(
+        "apikey" => $apiKey,
+        "id" => $listId,
+        "email" => array(
+            "email" => $email,
+            "euid" => "",
+            "leid" => ""
+        ),
+        "double_optin" => $double_optin,
+        "send_welcome" => $send_welcome,
+        "merge_vars" => array(
+            'FNAME' => $fname,
+            'LNAME' => $lname
+        )
+    );
+
+    $post_query_string = http_build_query($post_query_array);
+
+    // SECURITY: Use cURL with proper options
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $post_url);
+    curl_setopt($ch, CURLOPT_POST, TRUE);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post_query_string);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+    
+    $curl_out = curl_exec($ch);
+    curl_close($ch);
+    
+    if (!$curl_out) {
+        echo 'error';
+        exit;
+    }
+    
+    $data = json_decode($curl_out);
+    if (isset($data->error)) {
+        echo 'error';
+    } else {
+        echo 'success';
+    }
+} else {
+    echo 'error';
+}
+
 ?>
