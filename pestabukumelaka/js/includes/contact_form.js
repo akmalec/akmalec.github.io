@@ -1,22 +1,5 @@
-/*
-
-Script  : Contact Form
-Version : 1.0
-Author  : Surjith S M
-URI     : http://themeforest.net/user/surjithctly
-
-Copyright © All rights Reserved
-Surjith S M / @surjithctly
-
-*/
-
 $(function() {
-
     "use strict";
-
-    /* 
-    VALIDATE
-    -------- */
 
     $("#phpcontactform").submit(function(e) {
         e.preventDefault();
@@ -42,33 +25,37 @@ $(function() {
             message: "Please enter your message",
         },
         submitHandler: function(form) {
-
             $("#js-contact-btn").attr("disabled", true);
 
-            /* 
-            CHECK PAGE FOR REDIRECT (Thank you page)
-            ---------------------------------------- */
-
+            // SECURITY: Get redirect safely - whitelist allowed values
             var redirect = $('#phpcontactform').data('redirect');
-            var noredirect = false;
-            if (redirect == 'none' || redirect == "" || redirect == null) {
-                noredirect = true;
+            var noredirect = !redirect || redirect === 'none' || redirect === "";
+            
+            // SECURITY: Validate redirect URL
+            var allowedHosts = ['rabaklit.com', 'akmalec.github.io'];
+            if (redirect && !noredirect) {
+                try {
+                    var url = new URL(redirect, window.location.origin);
+                    var isAllowed = allowedHosts.some(host => url.hostname.includes(host));
+                    if (!isAllowed) {
+                        noredirect = true;
+                        redirect = null;
+                    }
+                } catch (e) {
+                    noredirect = true;
+                    redirect = null;
+                }
             }
 
-            $("#js-contact-result").html('<p class="help-block">Please wait...</p>');
+            $("#js-contact-result").text('Please wait...');
 
-            /* 
-            FETCH SUCCESS / ERROR MSG FROM HTML DATA-ATTR
-            --------------------------------------------- */
-
-            var success_msg = $('#js-contact-result').data('success-msg');
-            var error_msg = $('#js-contact-result').data('error-msg');
+            // SECURITY: Get messages and escape them
+            var success_msg = $('<div>').text($('#js-contact-result').data('success-msg') || 
+                'Thank you! Your message has been sent successfully.').html();
+            var error_msg = $('<div>').text($('#js-contact-result').data('error-msg') || 
+                'Sorry! There was an error sending your message.').html();
 
             var dataString = $(form).serialize();
-
-            /* 
-             AJAX POST
-             --------- */
 
             $.ajax({
                 type: "POST",
@@ -77,21 +64,38 @@ $(function() {
                 cache: false,
                 success: function(d) {
                     $(".form-group").removeClass("has-success");
-                    if (d == 'success') {
+                    if (d === 'success') {
                         if (noredirect) {
-                            $('#js-contact-result').fadeIn('slow').html('<div class="alert alert-success top-space">' + success_msg + '</div>').delay(3000).fadeOut('slow');
+                            // SECURITY: Use text() to prevent XSS
+                            $('#js-contact-result')
+                                .fadeIn('slow')
+                                .html('<div class="alert alert-success top-space"></div>')
+                                .find('.alert-success').text(success_msg)
+                                .delay(3000)
+                                .fadeOut('slow');
                         } else {
+                            // SECURITY: Validate before redirect
                             window.location.href = redirect;
                         }
                     } else {
-                        $('#js-contact-result').fadeIn('slow').html('<div class="alert alert-danger top-space">' + error_msg + '</div>').delay(3000).fadeOut('slow');
+                        $('#js-contact-result')
+                            .fadeIn('slow')
+                            .html('<div class="alert alert-danger top-space"></div>')
+                            .find('.alert-danger').text(error_msg)
+                            .delay(3000)
+                            .fadeOut('slow');
                     }
+                    $("#js-contact-btn").attr("disabled", false);
+                },
+                error: function() {
+                    $('#js-contact-result')
+                        .fadeIn('slow')
+                        .html('<div class="alert alert-danger top-space"></div>')
+                        .find('.alert-danger').text(error_msg);
                     $("#js-contact-btn").attr("disabled", false);
                 }
             });
             return false;
-
         }
     });
-
-})
+});
